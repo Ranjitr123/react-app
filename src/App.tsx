@@ -10,6 +10,7 @@ import About from './components/about';
 import Contact from './components/contact';
 import Products from './components/products';
 import Nopagefound from "./components/page-not-found"
+import Navbar from './components/navbar';
 
 
 function App() {
@@ -40,6 +41,7 @@ useEffect(()=>{
      } */}
 
      <BrowserRouter>
+     <Navbar />
      <Routes>
       <Route path='/' element={<Home />}></Route>
       <Route path='/about' element={<About />}></Route>
